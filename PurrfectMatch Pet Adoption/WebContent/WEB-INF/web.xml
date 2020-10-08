@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>PurrfectMatch Online Shelter</display-name>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>action.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>action.ulogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>adoption</servlet-name>
+    <servlet-class>action.adoption</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>manager</servlet-name>
+    <servlet-class>action.manager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/ulogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adoption</servlet-name>
+    <url-pattern>/adoption</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>manager</servlet-name>
+    <url-pattern>/manager</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
